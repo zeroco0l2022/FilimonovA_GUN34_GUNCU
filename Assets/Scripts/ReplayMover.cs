@@ -22,11 +22,17 @@ namespace DefaultNamespace
                 // Потому что без записанных данных мы не можем воспроизводить движение
                 enabled = false;
             }
+            
         }
 
         private void Update()
         {
+            if (_index >= _save.Records.Count)
+            {
+                return;
+            }
             var curr = _save.Records[_index];
+            
             //todo comment: Что проверяет это условие (с какой целью)? 
             // Настало ли время для перехода к следующей точке
             if (Time.time > curr.Time)

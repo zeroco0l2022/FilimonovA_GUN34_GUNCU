@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace DefaultNamespace
 {
@@ -10,9 +11,15 @@ namespace DefaultNamespace
         //todo comment: Что произойдёт, если _delay > _duration?
         // Сработает проверка в Start(), duration увеличится delay*5f 
 
-        [Range(0.2f, 1.0f)] private readonly float _delay = 0.5f;
+        [FormerlySerializedAs("_delay")]
+        [Range(0.2f, 1.0f)] 
+        [SerializeField]
+        private float delay = 0.5f;
 
-        [Min(0.2f)] private float _duration = 5f;
+        [FormerlySerializedAs("_duration")]
+        [Min(0.2f)] 
+        [SerializeField]
+        private float duration = 5f;
 
         private PositionSaver _save;
 
@@ -23,13 +30,13 @@ namespace DefaultNamespace
             _save = GetComponent<PositionSaver>();
             _save.Records.Clear();
 
-            if (_duration <= _delay) _duration = _delay * 5f;
+            if (duration <= delay) duration = delay * 5f;
         }
 
         private void Update()
         {
-            _duration -= Time.deltaTime;
-            if (_duration <= 0f)
+            duration -= Time.deltaTime;
+            if (duration <= 0f)
             {
                 enabled = false;
                 Debug.Log($"<b>{name}</b> finished", this);
@@ -41,7 +48,7 @@ namespace DefaultNamespace
             _currentDelay -= Time.deltaTime;
             if (_currentDelay <= 0f)
             {
-                _currentDelay = _delay;
+                _currentDelay = delay;
                 _save.Records.Add(new PositionSaver.Data
                 {
                     Position = transform.position,

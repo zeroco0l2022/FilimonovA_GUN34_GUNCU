@@ -6,6 +6,7 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
+    [Serializable]
     public class PositionSaver : MonoBehaviour
     {
         [SerializeField]
@@ -14,7 +15,10 @@ namespace DefaultNamespace
             "Для заполнения этого поля нужно воспользоваться контекстным меню в инспекторе и командой “Create File”")]
         private TextAsset _json;
 
-        public List<Data> Records { get; private set; }
+        [SerializeField]
+        [HideInInspector]
+        private List<Data> _records = new();
+        public List<Data> Records { get => _records; private set => _records = value; }
 
         private void Awake()
         {
