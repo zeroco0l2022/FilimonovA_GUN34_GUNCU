@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: DefaultCellPalleteSettings
   m_EditorClassIdentifier: 
   selectedMaterial: {fileID: 2100000, guid: 7209cfb0183ec7d458b5a1c276678665, type: 2}
-  moveMaterial: {fileID: 2100000, guid: 940ad69f0feb40a4bbff53a6ff517619, type: 2}
-  attackMaterial: {fileID: 2100000, guid: ff5dbe58d08038f47aa034410b58c427, type: 2}
+  moveOrAttackMaterial: {fileID: 2100000, guid: 940ad69f0feb40a4bbff53a6ff517619, type: 2}
   moveAndAttackMaterial: {fileID: 2100000, guid: bee84cbec60476d4cbe4fea8aeb4023c, type: 2}
-  player1Color: {r: 0, g: 0, b: 1, a: 1}
-  player2Color: {r: 1, g: 0, b: 0, a: 1}
+  player1Color: {r: 0, g: 0, b: 0, a: 1}
+  player2Color: {r: 1, g: 1, b: 1, a: 1}
   selectionAlpha: 0.5

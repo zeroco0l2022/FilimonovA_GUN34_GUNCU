@@ -8,8 +8,7 @@ public class CellPaletteSettings : ScriptableObject
 {
     [Header("Selection Materials")]
     public Material selectedMaterial;
-    public Material moveMaterial;
-    public Material attackMaterial;
+    public Material moveOrAttackMaterial;
     public Material moveAndAttackMaterial;
     
     [Header("Visual Settings")]

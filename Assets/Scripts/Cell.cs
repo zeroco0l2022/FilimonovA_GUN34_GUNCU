@@ -52,11 +52,13 @@ public class Cell : MonoBehaviour, IPointerEnterHandler, IPointerClickHandler, I
     public void OnPointerEnter(PointerEventData eventData)
     {
         focus.SetActive(true);
+        focus.GetComponent<MeshRenderer>().enabled = true;
     }
     
     public void OnPointerExit(PointerEventData eventData)
     {
         focus.SetActive(false);
+        focus.GetComponent<MeshRenderer>().enabled = false;
     }
     
     public void OnPointerClick(PointerEventData eventData)
