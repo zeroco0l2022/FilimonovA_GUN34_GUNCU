@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="18b13a5d-8d11-4fdf-9a1a-7646db5b8913" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Serialization/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Serialization/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Cell.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Cell.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DefaultCellPalleteSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/DefaultCellPalleteSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Cell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Cell.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CellPaletteSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CellPaletteSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BoardGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BoardGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CellManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CellManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +124,7 @@
       <workItem from="1745669457127" duration="3478000" />
       <workItem from="1745844404383" duration="19372000" />
       <workItem from="1745931501248" duration="727000" />
+      <workItem from="1745935559890" duration="886000" />
     </task>
     <servers />
   </component>

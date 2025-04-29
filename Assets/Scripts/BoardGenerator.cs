@@ -1,18 +1,19 @@
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
+[ExecuteInEditMode]
 public class BoardGenerator : MonoBehaviour
 {
     public GameObject cellPrefab;
     public Material darkMaterial;
     public int boardSize = 8;
 
-    private void Start()
+    public void CreateBoard()
     {
-        CreateBoard();
-    }
-
-    private void CreateBoard()
-    {
+        ClearBoard();
+        
         var offset = (boardSize - 1) / 2f;
         for (var i = 0; i < boardSize; i++)
         {
@@ -31,6 +32,13 @@ public class BoardGenerator : MonoBehaviour
                 cellObject.name = "Cell";
             }
         }
-        
+    }
+    
+    public void ClearBoard()
+    {
+        while (transform.childCount > 0)
+        {
+            DestroyImmediate(transform.GetChild(0).gameObject);
+        }
     }
 }
